@@ -1,1 +1,285 @@
-<h1>Hello I'm Ramy</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link href="https://fonts.cdnfonts.com/css/cubano" rel="stylesheet">
+   <link href="https://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+   <style>
+      body {
+         font-family: 'Sofia Pro', sans-serif;
+         color: #f8f9fa;
+         margin: 0;
+         padding: 0;
+      }
+      .section {
+         min-height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 40px 0;
+      }
+      h1 {
+         font-family: 'Cubano', sans-serif;
+         margin: 0;
+      }
+      .navbar {
+         background-color: transparent !important;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         z-index: 999;
+         transition: background-color 0.3s ease-in-out;
+      }
+      .navbar.navbar-colored {
+         background-color: #2D4356 !important;
+      }
+      .navbar-brand {
+         font-size: 24px;
+         font-weight: bold;
+         color: #f8f9fa;
+         margin-right: auto;
+      }
+      .navbar-dark .navbar-nav .nav-link {
+         color: #f8f9fa;
+      }
+
+      .navbar-nav {
+        gap: 20px; /* Adds spacing between links */
+      }
+
+      .footer {
+         background-color: #2D4356;
+         color: #f8f9fa;
+         padding: 10px 0;
+      }
+      .footer p {
+         margin-bottom: 0;
+      }
+      .project-box {
+         background-color: #f8f9fa;
+         border: 1px solid #ddd;
+         border-radius: 5px;
+         padding: 20px;
+         margin-bottom: 20px;
+         transition: box-shadow 0.3s ease;
+      }
+      .project-box img {
+         width: 100%;
+         height: auto;
+         border-radius: 5px;
+         margin-bottom: 10px;
+      }
+      .project-box h4 {
+         margin: 0;
+         margin-bottom: 10px;
+      }
+      .project-box p {
+         margin-bottom: 15px;
+      }
+      .project-details {
+         color: #000;
+      }
+      .project-box a.btn {
+         text-decoration: none;
+      }
+      .icon-circle {
+         position: relative;
+         display: inline-block;
+         background-color: #2D4356;
+         border-radius: 50%;
+         padding: 20px;
+         margin-bottom: 10px;
+         transition: background-color 0.3s ease;
+      }
+      .icon-circle i {
+         font-size: 36px;
+         color: #f8f9fa;
+      }
+      .icon-circle::before {
+         content: "";
+         position: absolute;
+         top: -2px;
+         left: -2px;
+         right: -2px;
+         bottom: -2px;
+         border: 10px solid transparent;
+         border-radius: 50%;
+         transition: border-color 0.3s ease;
+      }
+      .icon-circle:hover {
+         background-color: transparent;
+      }
+      .icon-circle:hover::before {
+         border-color: #2D4356;
+      }
+      #home {
+         background-color: #082032;
+      }
+      #about {
+         background-color: #2C394B;
+      }
+      #services {
+         background-color: #526D82;
+      }
+      #portfolio {
+         background-color: #334756;
+      }
+   </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-transparent">
+    <div class="container">
+       <a class="navbar-brand" href="#">Ramy</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+             <li class="nav-item">
+                <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+             </li>
+          </ul>
+       </div>
+    </div>
+ </nav>
+   <div id="home" class="section">
+      <div class="container">
+         <h1>HELLO</h1>
+         <p>Welcome to my portfolio website.</p>
+         <p>I'm Ramy Abidi, a web developer with expertise in HTML, CSS, JavaScript.</p>
+         <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+         </div>
+      </div>
+   </div>
+   <div id="about" class="section">
+      <div class="container">
+         <h2>About Me</h2>
+         <p>I'm a passionate web developer with several years of experience in building responsive and user-friendly websites. I love to explore new technologies and continuously improve my skills.</p>
+      </div>
+   </div>
+   <div id="services" class="section">
+      <div class="container">
+         <h1 align="center">Services</h1>
+         <br>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="service-box text-center">
+                  <div class="icon-circle">
+                     <img src="https://www.svgrepo.com/show/452091/python.svg" width="128">
+                  </div>
+                  <h3>Python Development</h3>
+                  <p>Proficient in Python programming for versatile applications.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-box text-center">
+                  <div class="icon-circle">
+                     <img src="https://www.svgrepo.com/show/452228/html-5.svg" width="128">
+                  </div>
+                  <h3>Web Development</h3>
+                  <p>Skilled in crafting responsive and user-friendly websites.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-box text-center">
+                  <div class="icon-circle">
+                     <img src="https://www.svgrepo.com/show/475631/android-color.svg" width="128">
+                  </div>
+                  <h3>Android Development</h3>
+                  <p>Making dynamic Android apps with intuitive design and seamless performance.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-box text-center">
+                  <div class="icon-circle">
+                     <img src="https://www.svgrepo.com/show/197988/wordpress.svg" height="128" width="128">
+                  </div>
+                  <h3>Website Management</h3>
+                  <p>Efficiently manage and enhance your websites and businesses.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-box text-center">
+                  <div class="icon-circle">
+                     <img src="https://i.ibb.co/60mtw20/quality-assurance.png" height="128" width="128">
+                  </div>
+                  <h3>Testing and Quality Assurance</h3>
+                  <p>Ensure the quality and reliability of your software.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-box text-center">
+                  <div class="icon-circle">
+                     <img src="https://www.svgrepo.com/show/429967/technical-support-help-2.svg" height="128" width="128">
+                  </div>
+                  <h3>Technical Consultation</h3>
+                  <p>Provide expert advice and technical guidance.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="portfolio" class="section">
+      <div class="container">
+         <h2>Projects</h2>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="project-box">
+                  <img src="path/to/project1-thumbnail.jpg" alt="Project 1">
+                  <div class="project-details">
+                     <h4>Project 1</h4>
+                     <p>Description of project 1.</p>
+                     <a href="#" class="btn btn-primary">View Project</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="project-box">
+                  <img src="path/to/project2-thumbnail.jpg" alt="Project 2">
+                  <div class="project-details">
+                     <h4>Project 2</h4>
+                     <p>Description of project 2.</p>
+                     <a href="#" class="btn btn-primary">View Project</a>
+                  </div>
+               </div>
+            </div>
+            <!-- Add more projects as needed -->
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="container text-center">
+         <p>Made with <i class="fa-solid fa-heart fa-bounce" style="color:red"></i> by <a href="https://www.github.com/ramyabidi" class="name-link" style="color: white;">Ramy</a></p>
+      </div>
+   </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+   <script>
+      window.addEventListener('scroll', function() {
+         var navbar = document.querySelector('.navbar');
+         if (window.scrollY > 50) {
+            navbar.classList.add('navbar-colored');
+         } else {
+            navbar.classList.remove('navbar-colored');
+         }
+      });
+   </script>
+</body>
+</html>
