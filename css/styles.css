@@ -1,0 +1,245 @@
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/cubano');
+
+body {
+    font-family: 'Sofia Pro', sans-serif;
+    color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #12181B, #334756);
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-family: 'Cubano', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    font-family: 'Cubano', sans-serif;
+    background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.navbar-colored {
+    background-color: #334756 !important;
+}
+
+.navbar-brand {
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #f8f9fa;
+    margin-right: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C93C3E;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #f8f9fa;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.footer {
+    background-color: #2D4356;
+    color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.project-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-box h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    margin-bottom: 15px;
+}
+
+.project-details {
+    color: #000;
+}
+
+.project-box a.btn {
+    text-decoration: none;
+}
+
+.typewriter-container {
+    position: relative;
+    font-family: 'Cubano', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cursor {
+    position: inherit;
+    top: 0;
+    left: calc(50% - 5px);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.icon-circle {
+    position: relative;
+    display: inline-block;
+    background-color: #2D4356;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-circle i {
+    font-size: 36px;
+    color: #f8f9fa;
+}
+
+.icon-circle::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.3s ease;
+}
+
+.icon-circle:hover {
+    background-color: transparent;
+}
+
+.icon-circle:hover::before {
+    border-color: #2D4356;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill h5 {
+    margin-bottom: 5px;
+}
+
+.progress {
+    margin-top: 5px;
+}
+
+#about h1 {
+    margin-bottom: 20px; /* Adjust the value to your preference */
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 32px;
+    color: #f8f9fa;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Custom hover colors for specific icons */
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.social-icon:hover .fa-at {
+    color: #F8DE22;
+}
+
+.social-icon:hover .fa-linkedin {
+    color: #0072b1;
+}
+
+.social-icon:hover .fa-facebook {
+    color: #6F61C0;
+}
+
+.social-icon:hover .fab.fa-twitter {
+    color: #26a7de;
+}
+
+.social-icon:hover .fa-github {
+    color: #ffffff;
+}
+
+.social-icon:hover .fa-gitlab {
+    color: #E24329;
+}
+/* Add similar rules for other icons */
+
+@media (max-width: 767px) {
+    .section h1,
+    .about-description,
+    .service-box h3,
+    .project-details h4 {
+        line-height: 2.0;
+    }
+}
