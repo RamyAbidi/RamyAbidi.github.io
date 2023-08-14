@@ -4,7 +4,7 @@ This repository hosts the content for my personal website.
 
 ## About Me
 
-I'm Ramya Bidi, a passionate developer you can learn more about me [@ramyabidi](https://github.com/ramyabidi)
+I'm Ramy Abidi, a passionate developer you can learn more about me [@ramyabidi](https://github.com/ramyabidi)
 
 ## Website
 
