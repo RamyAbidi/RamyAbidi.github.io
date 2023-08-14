@@ -1,4 +1,3 @@
-# ramyabidi.github.io
 # Welcome to my website's GitHub repository!
 
 This repository hosts the content for my personal website.
