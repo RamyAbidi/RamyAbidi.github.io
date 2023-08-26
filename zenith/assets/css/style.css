@@ -1,0 +1,270 @@
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/cubano');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(26, 26, 46, 0.8);
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=2467), auto;
+  font-family: 'Sofia Pro', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  position: relative;
+  min-height: 100vh;
+}
+
+#header {
+  height: 100vh;
+  width: 100%;
+}
+
+#content .title {
+  color: #7d48b1;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#content .title span {
+  color: #fff;
+}
+
+#content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: -10px;
+  text-align: center;
+}
+
+#content ul li {
+  display: inline-block;
+  padding: 0;
+}
+
+#content ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#content ul li:hover a, #content ul li:focus a, #content ul li:active a {
+  color: #f23b5c;
+  transition: color 100ms linear;
+}
+
+#content ul li.divider {
+  color: gray;
+  padding: 0 10px;
+}
+
+#content img {
+  height: 72px;
+  padding: 0;
+}
+
+#content .scroller {
+  text-align: center;
+  padding: 0;
+  display: block;
+  margin-top: 60.2vh;
+}
+
+#products {
+  background-image: linear-gradient(#191919, #141414);
+}
+
+#products .title {
+  font-family: 'Cubano', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 150px;
+}
+
+#products .line {
+  width: 50px;
+  height: 2px;
+  margin: 0 auto 2.5px;
+  background: #512B81;
+}
+
+#products .text {
+  color: #a6a6a6;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.15rem;
+  padding-top: 10px;
+  padding-bottom: 75px;
+}
+
+#pricing {
+  background: #141414;
+  padding: 25px 0 100px;
+}
+
+#pricing .panel {
+  border-radius: 10px;
+  border: 2px solid #333;
+  background: transparent;
+  padding: 50px 20px;
+  transition: border-color 250ms ease-in-out;
+  margin-bottom: 30px;
+}
+
+#pricing .panel:hover, #pricing .panel:focus, #pricing .panel:active {
+  border-color: #512B81;
+}
+
+#pricing .panel .title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#pricing .panel .text {
+  color: #a6a6a6;
+  font-weight: 400;
+  font-size: 0.95rem;
+  text-align: center;
+  padding-top: 2.5px;
+}
+
+#pricing .panel img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#pricing .panel .divider {
+  width: 75%;
+  height: 2px;
+  margin: 35px auto;
+  background: #4477CE;
+}
+
+#pricing .panel .price {
+  font-family: 'Cubano', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+#pricing .panel .term {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+#pricing .panel .order {
+  color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  transition: background 250ms ease-in-out, border-color 250ms ease-in-out;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 15px 0;
+  width: 75%;
+  text-align: center;
+  text-decoration: none;
+}
+
+#pricing .panel .order:hover, #pricing .panel .order:focus, #pricing .panel .order:active {
+  background: #512B81;
+  border-color: transparent;
+}
+
+#footer {
+  background: #141414;
+  padding: 50px 0;
+  color: #a6a6a6;
+}
+
+#footer .text {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f23b5c;
+  border-radius: 6px;
+  border: 3px solid #333;
+}
+
+#main_logo {
+  display: inline-block;
+  position: relative;
+  top: 24vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#main_logo img {
+  max-width: 100%;
+  height: auto;
+  width: 520px;
+  padding-bottom: 25px;
+}
+
+#video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 35, 26, 0.7); /* Adjust color and opacity as needed */
+  z-index: -1;
+}
+
+.footer {
+  background-color: #141414;
+  color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
